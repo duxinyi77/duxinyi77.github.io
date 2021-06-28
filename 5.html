@@ -1,62 +1,56 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>form表单</title>
-    <style type="text/css">
-        .mr-cont {
-            width: 500px;
-            margin: 50px auto;
-        }
-        .top {
-            height: 170px;
-            background: #2ab0f7;
-        }
-        .top img {
-            margin: 50px 160px;
-        }
-        .top ~ div {
-            height: 140px;
-            background: rgb(235, 242, 249)
-        }
-        .bom {
-            padding: 40px 40px;
-        }
-        .bom img, .bom form {
-            float: left;
-        }
-
-        .bom form {
-            margin: -10px 50px;
-        }
-
-        form p, .btn {
-            margin-top: 20px;
-        }
-
-        .btn {
-            width: 220px;
-            height: 35px;
-            letter-spacing: 3px;
-            background: rgb(42, 176, 247);
-            border-radius: 5px;
-            border-color: transparent;
-            font-size: 16px;
-            color: #fff;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
 </head>
-
 <body>
-<div class="mr-cont">
-    <div class="top"><img src="img/QQsmall1.png"></div>
-    <div class="bom"><img src="img/head.png">
-        <form action="#" method="get" target="blank">
-            <p>账号：<input type="text"></p>
-            <p>密码：<input type="password"></p>
-            <input class="btn" type="button" value="安全登录">
-        </form>
-    </div>
+
+<div class="cont">
+<div class="img">
+    <img src="img.png">
+</div>
+    <form>
+        <h1>欢迎注册</h1>
+        <label class="txt">昵称：<input type="text"> </label><!--单行文本框-->
+        <label class="txt">密码：<input type="password"> </label><!--密码框-->
+        <label class="sure">确认密码：<input type="password"> </label>
+        <!--单选按钮-->
+        <div>性别：<label><input type="radio" name="sex">男</label>
+                    <label><input type="radio" name="sex">女</label></div>
+        <div class="birth">生日：
+            <!--下拉菜单-->
+            <select>
+                <option>公历</option>
+            </select>
+            <select>
+                <option>1996年</option>
+            </select>
+            <select>
+                <option>月</option>
+            </select>
+            <select>
+                <option>日</option>
+            </select>
+        </div>
+        <div class="addr">所在地：
+            <select>
+                <option>中国</option>
+            </select>
+            <select>
+                <option>吉林</option>
+            </select>
+            <select>
+                <option>长春</option>
+            </select>
+        </div>
+        <label class="sure">手机号码：<input type="text"> </label>
+        <p>可通过该手机号码快速找回密码</p>
+        <input type="button" value="立即注册">
+        <!--多选按钮-->
+        <label class="sel"><input type="checkbox">我已阅读并同意服务提条款和隐私政策</label>
+    </form>
 </div>
 </body>
 </html>
